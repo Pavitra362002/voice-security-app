@@ -1,1 +1,7 @@
+# Virtual Environment
 venv_tf_gpu_310/
+
+# Large files/folders removed from Git history (or never tracked)
+backend/datasets/
+backend/models/sound_classifier_model.h5
+frontend/node_modules/ # Always ignore node_modules for JS projects
