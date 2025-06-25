@@ -1,0 +1,29 @@
+# --- backend/requirements.txt ---
+# Flask and related
+Flask==2.2.5
+Flask-CORS==3.0.10
+gunicorn # For production deployment if needed, not strictly for local dev
+
+# Audio processing and handling
+sounddevice==0.4.6
+numpy==1.23.5
+scipy==1.10.1
+soundfile==0.12.1
+librosa==0.9.2 # For audio resampling and other audio features
+pyaudio==0.2.13 # Dependency for SpeechRecognition microphone access
+pydub==0.25.1 # For cross-format audio conversion (webm to wav)
+
+# Speech Recognition
+SpeechRecognition==3.10.0
+
+# Machine Learning related (for voice authentication - simulated, and sound event detection)
+scikit-learn==1.2.2 # For cosine similarity if not using scipy, or other ML utilities
+# For a REAL sound event model, you might need:
+# tensorflow==2.10.0
+# keras==2.10.0
+# Onnxruntime # if using ONNX models
+
+# Utilities
+python-dotenv==1.0.0 # For loading environment variables (e.g., API keys if used)
+pytz==2023.3 # Often a dependency for time-related things
+requests==2.32.3 # For making HTTP requests to external APIs (like Gemini)
